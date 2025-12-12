@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////
+//
+//  File name :     program39_3.cpp
+//  Description :   This program prints numbers from 5 to 1 
+//                  using recursive function.
+//  Author :        Varad Nitin Muley
+//  Date :          12/12/2025
+//
+////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+////////////////////////////////////////////////////////////
+//
+//  Function Name : Display
+//  Description   : Prints numbers from 5 down to 1 using recursion.
+//  Input         : ---
+//  Output        : Void
+//  Time Complexity : O(N)
+//
+////////////////////////////////////////////////////////////
+
+void Display()
+{
+    static int iCnt = 5;
+
+    if(iCnt >= 1)
+    {
+        cout << iCnt << "\t";
+        iCnt--;
+        Display();
+    }
+}
+
+////////////////////////////////////////////////////////////
+//
+//  ENTRY POINT FUNCTION
+//
+////////////////////////////////////////////////////////////
+
+int main()
+{
+    Display();
+    return 0;
+}
+
+////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handled by the Application
+//
+//  Output : 5   4   3   2   1
+//
+////////////////////////////////////////////////////////////

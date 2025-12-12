@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////
+//
+//  File name :     program39_4.cpp
+//  Description :   This program prints characters from A to F 
+//                  using recursive function.
+//  Author :        Varad Nitin Muley
+//  Date :          12/12/2025
+//
+////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+////////////////////////////////////////////////////////////
+//
+//  Function Name : Display
+//  Description   : Prints characters from A to F using recursion.
+//  Input         : ---
+//  Output        : Void
+//  Time Complexity : O(N)
+//
+////////////////////////////////////////////////////////////
+
+void Display()
+{
+    static char iCnt = 'A';
+
+    if(iCnt <= 'F')
+    {
+        cout << iCnt << "\t";
+        iCnt++;
+        Display();
+    }
+}
+
+////////////////////////////////////////////////////////////
+//
+//  ENTRY POINT FUNCTION
+//
+////////////////////////////////////////////////////////////
+
+int main()
+{
+    Display();
+    return 0;
+}
+
+////////////////////////////////////////////////////////////
+//
+//  Test Cases Successfully Handled by the Application
+//
+//  Output : A   B   C   D   E   F
+//
+////////////////////////////////////////////////////////////
